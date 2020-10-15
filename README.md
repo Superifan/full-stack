@@ -2,16 +2,16 @@
 
 >这是一个简单的全栈Web.App，基于Deno + Vue +Mysql.
 
-##client
+## client
 
->运行在Brower里的应用程序'code'。（html + js + css）
+> 运行在Brower里的应用程序'code'。（html + js + css）
 
-##Server
+## Server
 
->运行在Linux上的Web服务器
+> 运行在Linux上的Web服务器
 功能：
--响应浏览器Http请求
+- 响应浏览器Http请求
 
-##Database
+## Database
 
->持久化数据，保存Brower浏览器用户需要的数据
+> 持久化数据，保存Brower浏览器用户需要的数据

@@ -25,8 +25,15 @@ sudo cp .deno/bin/deno /usr/bin
 # 检查是否安装成功
 deno --version
 
-#克隆git
+# 克隆git
 git clone https://github.com/Superifan/full-stack.git
+
+# 创建一个.js文件
+touch .js
+
+# 运行.js文件
+deno run --allow-net mod.js
+
 
 ## Database
 

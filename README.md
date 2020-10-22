@@ -25,9 +25,23 @@ sudo cp .deno/bin/deno /usr/bin
 # 检查是否安装成功
 deno --version
 
-#克隆git
+# 克隆git
 git clone https://github.com/Superifan/full-stack.git
+
+# 创建一个.js文件
+touch .js
+
+# 运行.js文件
+deno run --allow-net mod.js
+
 
 ## Database
 
 > 持久化数据，保存Brower浏览器用户需要的数据
+
+- client：html 页面，用户点击，发起http请求。
+- server层 api：响应client端用户HTTP请求。（通过deno三方库，实现mysql使用）
+- Liunx系统层：`install mysql`服务，
+- 数据库：创建用户，创建表，插入数据
+
+

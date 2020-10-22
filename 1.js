@@ -1,4 +1,5 @@
 import { Application, Router, send } from "https://deno.land/x/oak/mod.ts";
+<<<<<<< HEAD
 
 import { Client } from "https://deno.land/x/mysql/mod.ts";
 const client = await new Client().connect({
@@ -7,6 +8,8 @@ const client = await new Client().connect({
   db: "enok",
   password: "175133Lf",
 });
+=======
+>>>>>>> 3b633c6f95df87fd3979e23f75cfd67a94c551e5
 
 const router = new Router();
 router
@@ -20,6 +23,7 @@ router
   getQuery(ctx, { mergeParams: true });
   });
 
+<<<<<<< HEAD
   .get("/books",)=>{
 
 }
@@ -27,6 +31,8 @@ router
   .get("/book/:id/page/:page", (ctx) => {
   getQuery(ctx, { mergeParams: true });
 });
+=======
+>>>>>>> 3b633c6f95df87fd3979e23f75cfd67a94c551e5
 
 const app = new Application();
 app.use(router.routes());

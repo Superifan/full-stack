@@ -1,5 +1,5 @@
 import { Application, Router, send } from "https://deno.land/x/oak/mod.ts";
-import {bookAll,bookSel} from './Book.js'
+import {bookAll,bookSel} from './book.js'
 
 const router = new Router();
 router
@@ -13,16 +13,16 @@ router
   const res = await bookAll();
   console.log(res.rows)
   ctx.response.body=res.rows;
-  });
+  })
 
-  .get("/books/:id",async(ctx))=>{
+  .get("/books/:id",async(ctx)=>{
   if(ctx.params&&ctx.params.id){
      const{id}=ctx.params;
      const res=await bookSel(id);
      console.log("res:",res.rows)
      ctx.response.body=res.rows;
   }
-}
+})
 
 const app = new Application();
 app.use(router.routes());

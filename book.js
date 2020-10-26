@@ -6,7 +6,7 @@ class Book{
    }
   
  create({id,name,address}){
-    return client.execute(`INSERT INTO aa (id,name,sex,address) VALUES (${id},${name},${sex}${address})`)
+    return client.execute(`INSERT INTO aa (id,name,sex,address) VALUES (${1},${"liufan"},${"1"}${"address"})`)
    }
 }
 

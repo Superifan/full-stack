@@ -11,6 +11,8 @@ const client = await new Client().connect({
 //create database
 //await client.execute(`CREATE DATABASE IF NOT EXISTS enok`);
 await client.execute(`USE a`);
+const res=client.execute("SELECT * FROM aa")
+console.info(res.rows)
 //await client.execute(`USE aa`);
 //create table
 //await client.execute(`
